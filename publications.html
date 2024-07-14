@@ -26,13 +26,9 @@
         <section class="publications">
             <div class="container">
                 <h1>Publications</h1>
-                <div class="publication">
-                    <h2>Title of the Research Paper</h2>
-                    <p><strong>Authors:</strong> A. Author, B. Author, C. Author</p>
-                    <p><strong>Abstract:</strong> Brief summary of the paper.</p>
-                    <a href="https://doi.org/10.xxxx/xxxxxx" target="_blank">Read More</a>
+                <div id="publications-list">
+                    <!-- Publications will be dynamically loaded here -->
                 </div>
-                <!-- Add more publication entries as needed -->
             </div>
         </section>
     </main>
@@ -41,5 +37,39 @@
             <p>&copy; 2024 Cognitive Neuroscience Lab. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('publications.json')
+                .then(response => response.json())
+                .then(data => {
+                    const publicationsList = document.getElementById('publications-list');
+                    data.forEach(publication => {
+                        const publicationDiv = document.createElement('div');
+                        publicationDiv.classList.add('publication');
+                        
+                        const title = document.createElement('h2');
+                        title.textContent = publication.title;
+                        publicationDiv.appendChild(title);
+                        
+                        const authors = document.createElement('p');
+                        authors.innerHTML = `<strong>Authors:</strong> ${publication.authors}`;
+                        publicationDiv.appendChild(authors);
+                        
+                        const abstract = document.createElement('p');
+                        abstract.innerHTML = `<strong>Abstract:</strong> ${publication.abstract}`;
+                        publicationDiv.appendChild(abstract);
+                        
+                        const link = document.createElement('a');
+                        link.href = publication.doi;
+                        link.target = "_blank";
+                        link.textContent = 'Read More';
+                        publicationDiv.appendChild(link);
+                        
+                        publicationsList.appendChild(publicationDiv);
+                    });
+                })
+                .catch(error => console.error('Error fetching publications:', error));
+        });
+    </script>
 </body>
 </html>
