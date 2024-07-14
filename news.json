@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Exciting New Research Published",
+        "image": "research.jpg",
+        "link": "news1.html",
+        "text": "Our lab has published groundbreaking research on cognitive functions."
+    },
+    {
+        "title": "Upcoming Conference",
+        "image": "conference.jpg",
+        "link": "news2.html",
+        "text": "Join us at the upcoming neuroscience conference to learn about our latest findings."
+    },
+    {
+        "title": "Lab Member Receives Award",
+        "image": "award.jpg",
+        "link": "news3.html",
+        "text": "Congratulations to Dr. Smith for receiving the prestigious neuroscience award."
+    }
+]
