@@ -1,26 +1,55 @@
 {
-    "name": "Dr. Jane Doe",
+    "name": "Dr. Géza Gergely Ambrus",
     "photo": "jane_doe.jpg",
     "external_links": {
-        "orcid": "https:\/\/orcid.org\/0000-0002-1825-0097",
-        "researchgate": "https:\/\/www.researchgate.net\/profile\/Jane_Doe",
-        "google_scholar": "https:\/\/scholar.google.com\/citations?user=abc123"
+        "orcid": "https:\/\/orcid.org\/0000-0002-8400-8178",
+        "researchgate": "https:\/\/www.researchgate.net\/profile\/Geza-Ambrus",
+        "google_scholar": "https:\/\/scholar.google.com\/citations?user=Xb6yDtQAAAAJ"
     },
     "education": [
-        "Ph.D. in Cognitive Neuroscience, University of Example",
-        "M.Sc. in Psychology, Example University",
-        "B.Sc. in Biology, Example University"
+        "Ph.D. in Biology, Georg August University of Göttingen",
+        "M.Sc. in Psychology, University of Szeged"
     ],
     "publications": {
         "journal_articles": [
-            {
-                "title": "Groundbreaking Research on Cognitive Functions",
-                "link": "https:\/\/example.com\/publication1"
-            },
-            {
-                "title": "Innovative Approaches in Neuroscience",
-                "link": "https:\/\/example.com\/publication2"
-            }
+            {"title": "Ambrus, G. G. (2024). Shared neural codes of recognition memory. Scientific Reports, 14(1), 15846. doi:10.1038/s41598-024-66158-y", "link": "https:\/\/doi.org\/10.1038/s41598-024-66158-y "},
+			{"title": "Kovács, G., Li, C., Ambrus, G. G., & Burton, A. M. (2023). The neural dynamics of familiarity-dependent face identity representation. Psychophysiology, 60(9), e14304. doi:10.1111/psyp.14304", "link": "https:\/\/doi.org\/10.1111/psyp.14304"},
+			{"title": "Dalski, A., Kovács, G., & Ambrus, G. G. (2023). No semantic information is necessary to evoke general neural signatures of face familiarity: evidence from cross-experiment classification. Brain Structure & Function, 228(2), 449–462. doi:10.1007/s00429-022-02583-x", "link": "https:\/\/doi.org\/10.1007/s00429-022-02583-x"},
+			{"title": "Klink, H., Kaiser, D., Stecher, R., Ambrus, G. G., & Kovács, G. (2023). Your place or mine? The neural dynamics of personally familiar scene recognition suggests category independent familiarity encoding. Cerebral Cortex (New York, N.Y.: 1991), 33(24), 11634–11645. doi:10.1093/cercor/bhad397", "link": "https:\/\/doi.org\/10.1093/cercor/bhad397"},
+			{"title": "Dalski, A., Kovács, G., Wiese, H., & Ambrus, G. G. (2022). Characterizing the shared signals of face familiarity: Long-term acquaintance, voluntary control, and concealed knowledge. Brain Research, 1796(148094), 148094. doi:10.1016/j.brainres.2022.148094", "link": "https:\/\/doi.org\/10.1016/j.brainres.2022.148094"},
+			{"title": "Vékony, T., Ambrus, G. G., Janacsek, K., & Nemeth, D. (2022). [Review of Cautious or causal? Key implicit sequence learning paradigms should not be overlooked when assessing the role of DLPFC (Commentary on Prutean et al.)]. Cortex; a journal devoted to the study of the nervous system and behavior, 148, 222–226. doi:10.1016/j.cortex.2021.10.001", "link": "https:\/\/doi.org\/10.1016/j.cortex.2021.10.001"},
+			{"title": "Li, C., Burton, A. M., Ambrus, G. G., & Kovács, G. (2022). A neural measure of the degree of face familiarity. Cortex; a Journal Devoted to the Study of the Nervous System and Behavior, 155, 1–12. doi:10.1016/j.cortex.2022.06.012", "link": "https:\/\/doi.org\/10.1016/j.cortex.2022.06.012"},
+			{"title": "Rostalski, S.-M., Robinson, J. E., Ambrus, G. G., Johnston, P., & Kovács, G. (2022). Person identity-specific adaptation effects in the ventral occipito-temporal cortex. The European Journal of Neuroscience, 55(5), 1232–1243. doi:10.1111/ejn.15604", "link": "https:\/\/doi.org\/10.1111/ejn.15604"},
+			{"title": "Dalski, A., Kovács, G., & Ambrus, G. G. (2022). Evidence for a general neural signature of face familiarity. Cerebral Cortex (New York, N.Y.: 1991), 32(12), 2590–2601. doi:10.1093/cercor/bhab366", "link": "https:\/\/doi.org\/10.1093/cercor/bhab366"},
+			{"title": "Sperl, L., Ruttloff, J. M., Ambrus, G. G., Kaufmann, J. M., Cañal-Bruland, R., & Schweinberger, S. R. (2021). Effects of motor restrictions on preparatory brain activity. Experimental Brain Research, 239(11), 3189–3203. doi:10.1007/s00221-021-06190-w", "link": "https:\/\/doi.org\/10.1007/s00221-021-06190-w"},
+			{"title": "Ambrus, G. G., Eick, C. M., Kaiser, D., & Kovács, G. (2021). Getting to know you: Emerging neural representations during face familiarization. The Journal of Neuroscience: The Official Journal of the Society for Neuroscience, 41(26), 5687–5698. doi:10.1523/JNEUROSCI.2466-20.2021", "link": "https:\/\/doi.org\/10.1523/JNEUROSCI.2466-20.2021"},
+			{"title": "Eick, Charlotta M., Ambrus, G. G., & Kovács, G. (2021). Inhibition of the occipital face area modulates the electrophysiological signals of face familiarity: A combined cTBS-EEG study. Cortex; a Journal Devoted to the Study of the Nervous System and Behavior, 141, 156–167. doi:10.1016/j.cortex.2021.03.034", "link": "https:\/\/doi.org\/10.1016/j.cortex.2021.03.034"},
+			{"title": "Sperl, L., Ambrus, G. G., Kaufmann, J. M., Schweinberger, S. R., & Cañal-Bruland, R. (2021). Electrophysiological correlates underlying interference control in motor tasks. Biological Psychology, 163(108138), 108138. doi:10.1016/j.biopsycho.2021.108138", "link": "https:\/\/doi.org\/10.1016/j.biopsycho.2021.108138"},
+			{"title": "Ambrus, G. G., Vékony, T., Janacsek, K., Trimborn, A. B. C., Kovács, G., & Nemeth, D. (2020). When less is more: Enhanced statistical learning of non-adjacent dependencies after disruption of bilateral DLPFC. Journal of Memory and Language, 114(104144), 104144. doi:10.1016/j.jml.2020.104144", "link": "https:\/\/doi.org\/10.1016/j.jml.2020.104144"},
+			{"title": "Eick, Charlotta Marina, Kovács, G., Rostalski, S.-M., Röhrig, L., & Ambrus, G. G. (2020). The occipital face area is causally involved in identity-related visual-semantic associations. Brain Structure & Function, 225(5), 1483–1493. doi:10.1007/s00429-020-02068-9", "link": "https:\/\/doi.org\/10.1007/s00429-020-02068-9"},
+			{"title": "Ambrus, G. G., Kaiser, D., Cichy, R. M., & Kovács, G. (2019). The neural dynamics of familiar face recognition. Cerebral Cortex (New York, N.Y.: 1991), 29(11), 4775–4784. doi:10.1093/cercor/bhz010", "link": "https:\/\/doi.org\/10.1093/cercor/bhz010"},
+			{"title": "Ambrus, G. G., Amado, C., Krohn, L., & Kovács, G. (2019). TMS of the occipital face area modulates cross-domain identity priming. Brain Structure & Function, 224(1), 149–157. doi:10.1007/s00429-018-1768-0", "link": "https:\/\/doi.org\/10.1007/s00429-018-1768-0"},
+			{"title": "Amado, C., Kovács, P., Mayer, R., Ambrus, G. G., Trapp, S., & Kovács, G. (2018). Neuroimaging results suggest the role of prediction in cross-domain priming. Scientific Reports, 8(1). doi:10.1038/s41598-018-28696-0", "link": "https:\/\/doi.org\/10.1038/s41598-018-28696-0"},
+			{"title": "Ambrus, G. G., Dotzer, M., Schweinberger, S. R., & Kovács, G. (2017). The occipital face area is causally involved in the formation of identity-specific face representations. Brain Structure & Function, 222(9), 4271–4282. doi:10.1007/s00429-017-1467-2", "link": "https:\/\/doi.org\/10.1007/s00429-017-1467-2"},
+			{"title": "Ambrus, G. G., Windel, F., Burton, A. M., & Kovács, G. (2017). Causal evidence of the involvement of the right occipital face area in face-identity acquisition. NeuroImage, 148, 212–218. doi:10.1016/j.neuroimage.2017.01.043", "link": "https:\/\/doi.org\/10.1016/j.neuroimage.2017.01.043"},
+			{"title": "Grotheer, M., Ambrus, G. G., & Kovács, G. (2016). Causal evidence of the involvement of the number form area in the visual detection of numbers and letters. NeuroImage, 132, 314–319. doi:10.1016/j.neuroimage.2016.02.069", "link": "https:\/\/doi.org\/10.1016/j.neuroimage.2016.02.069"},
+			{"title": "Ambrus, G. G., Chaieb, L., Stilling, R., Rothkegel, H., Antal, A., & Paulus, W. (2016). Monitoring transcranial direct current stimulation induced changes in cortical excitability during the serial reaction time task. Neuroscience Letters, 616, 98–104. doi:10.1016/j.neulet.2016.01.039", "link": "https:\/\/doi.org\/10.1016/j.neulet.2016.01.039"},
+			{"title": "Gall, C., Schmidt, S., Schittkowski, M. P., Antal, A., Ambrus, G. G., Paulus, W., … Sabel, B. A. (2016). Alternating current stimulation for vision restoration after optic nerve damage: A randomized clinical trial. PloS One, 11(6), e0156134. doi:10.1371/journal.pone.0156134", "link": "https:\/\/doi.org\/10.1371/journal.pone.0156134"},
+			{"title": "Janacsek, K., Ambrus, G. G., Paulus, W., Antal, A., & Nemeth, D. (2015). Right hemisphere advantage in statistical learning: evidence from a probabilistic sequence learning task. Brain Stimulation, 8(2), 277–282. doi:10.1016/j.brs.2014.11.008", "link": "https:\/\/doi.org\/10.1016/j.brs.2014.11.008"},
+			{"title": "Ambrus, G. G., Pisoni, A., Primaßin, A., Turi, Z., Paulus, W., & Antal, A. (2015). Bi-frontal transcranial alternating current stimulation in the ripple range reduced overnight forgetting. Frontiers in Cellular Neuroscience, 9, 374. doi:10.3389/fncel.2015.00374", "link": "https:\/\/doi.org\/10.3389/fncel.2015.00374"},
+			{"title": "Pisoni, A., Turi, Z., Raithel, A., Ambrus, G. G., Alekseichuk, I., Schacht, A., … Antal, A. (2015). Separating recognition processes of declarative memory via anodal tDCS: boosting old item recognition by temporal and new item detection by parietal stimulation. PloS One, 10(3), e0123085. doi:10.1371/journal.pone.0123085", "link": "https:\/\/doi.org\/10.1371/journal.pone.0123085"},
+			{"title": "Grundey, J., Amu, R., Ambrus, G. G., Batsikadze, G., Paulus, W., & Nitsche, M. A. (2015). Double dissociation of working memory and attentional processes in smokers and non-smokers with and without nicotine. Psychopharmacology, 232(14), 2491–2501. doi:10.1007/s00213-015-3880-7", "link": "https:\/\/doi.org\/10.1007/s00213-015-3880-7"},
+			{"title": "Chaieb, L., Antal, A., Ambrus, G. G., & Paulus, W. (2014). Brain-derived neurotrophic factor: its impact upon neuroplasticity and neuroplasticity inducing transcranial brain stimulation protocols. Neurogenetics, 15(1), 1–11. doi:10.1007/s10048-014-0393-1", "link": "https:\/\/doi.org\/10.1007/s10048-014-0393-1"},
+			{"title": "Turi, Zsolt, Ambrus, G. G., Ho, K.-A., Sengupta, T., Paulus, W., & Antal, A. (2014). When size matters: large electrodes induce greater stimulation-related cutaneous discomfort than smaller electrodes at equivalent current density. Brain Stimulation, 7(3), 460–467. doi:10.1016/j.brs.2014.01.059", "link": "https:\/\/doi.org\/10.1016/j.brs.2014.01.059"},
+			{"title": "Antal, A., Ambrus, G. G., & Chaieb, L. (2014a). The impact of electrical stimulation techniques on behavior. Wiley Interdisciplinary Reviews. Cognitive Science, 5(6), 649–659. doi:10.1002/wcs.1319", "link": "https:\/\/doi.org\/10.1002/wcs.1319"},
+			{"title": "Chaieb, Leila, Antal, A., Pisoni, A., Saiote, C., Opitz, A., Ambrus, G. G., … Paulus, W. (2014). Safety of 5 kHz tACS. Brain Stimulation, 7(1), 92–96. doi:10.1016/j.brs.2013.08.004", "link": "https:\/\/doi.org\/10.1016/j.brs.2013.08.004"},
+			{"title": "Antal, A., Ambrus, G. G., & Chaieb, L. (2014b). Toward unraveling readingâ€“related modulations of tDCSâ€“induced neuroplasticity in the human visual cortex. Frontiers in Psychology, 5, 642. doi:10.3389/fpsyg.2014.00642", "link": "https:\/\/doi.org\/10.3389/fpsyg.2014.00642"},
+			{"title": "Turi, Zs, Ambrus, G. G., Janacsek, K., Emmert, K., Hahn, L., Paulus, W., & Antal, A. (2013). Both the cutaneous sensation and phosphene perception are modulated in a frequency-specific manner during transcranial alternating current stimulation. Restorative Neurology and Neuroscience, 31(3), 275–285. doi:10.3233/RNN-120297", "link": "https:\/\/doi.org\/10.3233/RNN-120297"},
+			{"title": "Ambrus, G. G., Al-Moyed, H., Chaieb, L., Sarp, L., Antal, A., & Paulus, W. (2012). The fade-in – Short stimulation – Fade out approach to sham tDCS – Reliable at 1 mA for naïve and experienced subjects, but not investigators. Brain Stimulation, 5(4), 499–504. doi:10.1016/j.brs.2011.12.001", "link": "https:\/\/doi.org\/10.1016/j.brs.2011.12.001"},
+			{"title": "Ambrus, G. G., Antal, A., & Paulus, W. (2011). Comparing cutaneous perception induced by electrical stimulation using rectangular and round shaped electrodes. Clinical Neurophysiology: Official Journal of the International Federation of Clinical Neurophysiology, 122(4), 803–807. doi:10.1016/j.clinph.2010.08.023", "link": "https:\/\/doi.org\/10.1016/j.clinph.2010.08.023"},
+			{"title": "Ambrus, G. G., Zimmer, M., Kincses, Z. T., Harza, I., Kovács, G., Paulus, W., & Antal, A. (2011). The enhancement of cortical excitability over the DLPFC before and during training impairs categorization in the prototype distortion task. Neuropsychologia, 49(7), 1974–1980. doi:10.1016/j.neuropsychologia.2011.03.026", "link": "https:\/\/doi.org\/10.1016/j.neuropsychologia.2011.03.026"},
+			{"title": "Ambrus, G. G., Paulus, W., & Antal, A. (2010). Cutaneous perception thresholds of electrical stimulation methods: comparison of tDCS and tRNS. Clinical Neurophysiology: Official Journal of the International Federation of Clinical Neurophysiology, 121(11), 1908–1914. doi:10.1016/j.clinph.2010.04.020", "link": "https:\/\/doi.org\/10.1016/j.clinph.2010.04.020"}
+
         ],
         "book_chapters": [
             {
