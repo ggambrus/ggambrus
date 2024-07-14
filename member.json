@@ -1,0 +1,24 @@
+{
+    "name": "Dr. Jane Doe",
+    "photo": "thispersondoesnotexist_02.jpg",
+    "external_links": {
+        "orcid": "https:\/\/orcid.org\/0000-0002-1825-0097",
+        "researchgate": "https:\/\/www.researchgate.net\/profile\/Jane_Doe",
+        "google_scholar": "https:\/\/scholar.google.com\/citations?user=abc123"
+    },
+    "education": [
+        "Ph.D. in Cognitive Neuroscience, University of Example",
+        "M.Sc. in Psychology, Example University",
+        "B.Sc. in Biology, Example University"
+    ],
+    "publications": [
+        {
+            "title": "Groundbreaking Research on Cognitive Functions",
+            "link": "https:\/\/example.com\/publication1"
+        },
+        {
+            "title": "Innovative Approaches in Neuroscience",
+            "link": "https:\/\/example.com\/publication2"
+        }
+    ]
+}

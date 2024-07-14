@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Profile - Cognitive Neuroscience Lab</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="member-profile.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+    
+    <main>
+        <section class="profile">
+            <div class="container">
+                <div class="profile-header">
+                    <img id="member-photo" alt="Member Photo">
+                    <h1 id="member-name"></h1>
+                    <div class="external-links" id="external-links"></div>
+                </div>
+                <div class="profile-details">
+                    <h2>Education</h2>
+                    <ul id="education-list"></ul>
+                    
+                    <h2>Publications</h2>
+                    <ul id="publications-list"></ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <div id="footer-placeholder"></div>
+    
+    <script src="include.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('member.json')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('member-photo').src = data.photo;
+                    document.getElementById('member-name').textContent = data.name;
+                    
+                    const externalLinksDiv = document.getElementById('external-links');
+                    for (const [platform, url] of Object.entries(data.external_links)) {
+                        const link = document.createElement('a');
+                        link.href = url;
+                        link.target = "_blank";
+                        link.textContent = platform.charAt(0).toUpperCase() + platform.slice(1);
+                        externalLinksDiv.appendChild(link);
+                    }
+                    
+                    const educationList = document.getElementById('education-list');
+                    data.education.forEach(education => {
+                        const li = document.createElement('li');
+                        li.textContent = education;
+                        educationList.appendChild(li);
+                    });
+
+                    const publicationsList = document.getElementById('publications-list');
+                    data.publications.forEach(publication => {
+                        const li = document.createElement('li');
+                        const link = document.createElement('a');
+                        link.href = publication.link;
+                        link.target = "_blank";
+                        link.textContent = publication.title;
+                        li.appendChild(link);
+                        publicationsList.appendChild(li);
+                    });
+                })
+                .catch(error => console.error('Error fetching member data:', error));
+        });
+    </script>
+</body>
+</html>
