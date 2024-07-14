@@ -73,11 +73,13 @@ header nav ul li a:hover {
     max-width: 150px;
     border-radius: 50%;
     margin-right: 20px;
-    float: left;
 }
 
 .member {
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
+    margin-bottom: 20px;
 }
 
 .member h2 {
@@ -112,7 +114,7 @@ footer {
 
 @media (min-width: 768px) {
     .member {
-        display: flex;
+        flex-direction: row;
         align-items: flex-start;
     }
 
@@ -122,5 +124,28 @@ footer {
 
     header nav ul li {
         margin-left: 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .members {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    .member {
+        flex-direction: column;
+        max-width: 300px;
+        margin: auto;
+    }
+
+    .member img {
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .member h2, .member .title, .member .bio, .member .research-interests, .member .email, .member .publications {
+        text-align: center;
     }
 }
