@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - Cognitive Neuroscience Lab</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="news-page.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+    
+    <main>
+        <section class="news">
+            <div class="container">
+                <h1>Latest News</h1>
+                <div id="news-list">
+                    <!-- News items will be dynamically loaded here -->
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <div id="footer-placeholder"></div>
+    
+    <script src="include.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('news.json')
+                .then(response => response.json())
+                .then(data => {
+                    const newsList = document.getElementById('news-list');
+                    data.forEach(news => {
+                        const newsItem = document.createElement('div');
+                        newsItem.classList.add('news-item');
+                        
+                        if (news.image) {
+                            const img = document.createElement('img');
+                            img.src = news.image;
+                            img.alt = news.title;
+                            newsItem.appendChild(img);
+                        }
+                        
+                        const title = document.createElement('h2');
+                        title.textContent = news.title;
+                        newsItem.appendChild(title);
+                        
+                        if (news.text) {
+                            const text = document.createElement('p');
+                            text.textContent = news.text;
+                            newsItem.appendChild(text);
+                        }
+                        
+                        if (news.link) {
+                            const link = document.createElement('a');
+                            link.href = news.link;
+                            link.textContent = 'Read more';
+                            newsItem.appendChild(link);
+                        }
+                        
+                        newsList.appendChild(newsItem);
+                    });
+                })
+                .catch(error => console.error('Error fetching news:', error));
+        });
+    </script>
+</body>
+</html>
