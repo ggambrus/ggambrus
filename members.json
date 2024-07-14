@@ -2,7 +2,7 @@
     {
         "name": "Dr. Jane Smith",
         "title": "Principal Investigator",
-        "image": "profile1.jpg",
+        "image": "thispersondoesnotexist_02.jpg",
         "bio": "Dr. Jane Smith is a leading researcher in cognitive neuroscience with a focus on memory and learning.",
         "research_interests": "Memory, Learning, Neuroplasticity",
         "email": "jane.smith@lab.edu",
@@ -20,7 +20,7 @@
     {
         "name": "Dr. John Doe",
         "title": "Postdoctoral Researcher",
-        "image": "profile2.jpg",
+        "image": "thispersondoesnotexist_03.jpg",
         "bio": "Dr. John Doe\u0027s research focuses on neural mechanisms of attention and perception.",
         "research_interests": "Attention, Perception, Neural Mechanisms",
         "email": "john.doe@lab.edu",
