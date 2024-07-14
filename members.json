@@ -1,19 +1,18 @@
 [
     {
-        "name": "Dr. Jane Smith",
-        "title": "Principal Investigator",
-        "image": "thispersondoesnotexist_02.jpg",
-        "bio": "Dr. Jane Smith is a leading researcher in cognitive neuroscience with a focus on memory and learning.",
-        "research_interests": "Memory, Learning, Neuroplasticity",
-        "email": "jane.smith@lab.edu",
+        "name": "Dr. Géza Gergely Ambrus",
+        "title": "Lab Head",
+        "image": "profile_images\/GGA.jpg",
+        "bio": "Dr. Géza Gergely Ambrus is cognitive neuroscientist with a research focus on the neural signatures of perception,  memory and learning.",
+        "research_interests": "Memory, Learning, Person perception, Neuroplasticity",
         "publications": [
             {
-                "title": "Understanding Memory",
-                "link": "https:\/\/doi.org\/10.xxxx\/xxxxxx2"
+                "title": "Shared neural codes of recognition memory",
+                "link": "https:\/\/doi.org\/10.1038\/s41598-024-66158-y"
             },
             {
-                "title": "Neuroplasticity and Learning",
-                "link": "https:\/\/doi.org\/10.xxxx\/xxxxxx2"
+                "title": "Your place or mine? The neural dynamics of personally familiar scene recognition suggests category independent familiarity encoding",
+                "link": "https:\/\/doi.org\/10.1093\/cercor\/bhad397"
             }
         ]
     },
