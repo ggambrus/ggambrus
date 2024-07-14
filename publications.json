@@ -1,9 +1,9 @@
 [
     {
-        "title": "Title of the Research Paper 1",
-        "authors": "A. Author, B. Author, C. Author",
-        "abstract": "Brief summary of the paper 1.",
-        "doi": "https:\/\/doi.org\/10.xxxx\/xxxxxx1"
+        "title": "Shared neural codes of recognition memory",
+        "authors": "Géza Gergely Ambrus",
+        "abstract": "Here, a data-driven approach was taken to investigate the temporal evolution of shared information content between different memory conditions using openly available EEG data from healthy human participants of both sexes, taken from six experiments. A test dataset involving personally highly familiar and unfamiliar faces was used. The results show that neural signals of recognition memory for face stimuli were highly generalized starting from around 200 ms following stimulus onset. When training was performed on non-face datasets, an early (around 200–300 ms) to late (post-400 ms) differentiation was observed over most regions of interest. Successful cross-classification for non-face stimuli (music and object/scene associations) was most pronounced in late period. Additionally, a striking dissociation was observed between familiar and remembered objects, with shared signals present only in the late window for correctly remembered objects, while cross-classification for familiar objects was successful in the early period as well.",
+        "doi": "https:\/\/doi.org/10.1038\/s41598-024-66158-y"
     },
     {
         "title": "Title of the Research Paper 2",
