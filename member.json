@@ -64,10 +64,48 @@
             }
         ],
         "conferences": [
-            {
-                "title": "Neuroscience Conference 2024",
-                "link": "https:\/\/example.com\/conference1"
-            }
+				{
+					"title": "Ambrus, G.G. and Ely, M., 2024. Exploring Emotional Face Familiarity Effects: Insights from EEG Multivariate Pattern Analysis. In: DUCOG 15, Conference of the Central European Cognitive Science Association, Dubrovnik, Croatia."},
+				{
+					"title": "Ely, M. and Ambrus, G.G., 2024. Shared neural signals for the processing of facial expressions. In: INC2024, International Neuroscience Conference, Pécs, Hungary."},
+				{
+					"title": "Ambrus, G.G. and Ozdemir, B., 2024. Shared neural codes of encoding and retrieval. In: INC2024, International Neuroscience Conference, Pécs, Hungary."},
+				{
+					"title": "Ambrus, G.G., 2023. Shared neural codes of recognition memory. In: DUCOG 14, Conference of the Central European Cognitive Science Association, Dubrovnik, Croatia."},
+				{
+					"title": "Dalski, A., Kovács, G. and Ambrus, G.G., 2022. Evidence for a general neural signature of face familiarity. In: International Neuroscience Meeting, Budapest 2022 – IBRO Workshop."},
+				{
+					"title": "Dalski, A., Kovács, G., Wiese, H. and Ambrus, G.G., 2022. Unique and Shared Neural Codes in Familiar Face Perception. In: International Neuroscience Meeting, Budapest 2022 – IBRO Workshop."},
+				{
+					"title": "Dalski, A., Kovács, G. and Ambrus, G.G., 2021. Evidence for a general signature of face familiarity. In: 12th Dubrovnik Conference on Cognitive Science (DUCOG)."},
+				{
+					"title": "Dalski, A., Kovács, G. and Ambrus, G.G., 2021. Exploring the neural dynamics of semantic categories within and across images, first and second language words. In: 12th Dubrovnik Conference on Cognitive Science (DUCOG)."},
+				{
+					"title": "Ambrus, G.G., Kaiser, D., Cichy, R.M. and Kovács, G., 2020. The neural dynamics of familiar face recognition. In: IBRO Workshop, Szeged."},
+				{
+					"title": "Ambrus, G.G., Kaiser, D., Süllwold, L.-C., Cichy, R.M. and Kovács, G., 2019. The neural dynamics of familiar face recognition. In: Tagung Experimentell Arbeitender Psychologen, London."},
+				{
+					"title": "Ambrus, G.G., Kaiser, D., Süllwold, L.-C., Cichy, R.M. and Kovács, G., 2018. The neural dynamics of familiar face recognition. In: The 41th European Conference on Visual Perception."},
+				{
+					"title": "Eisele, A., Ambrus, G.G., Windel, F., Burton, M.A. and Kovács, G., 2017. Facial identity learning in the occipital facearea. In: FENS Regional Meeting, Pécs."},
+				{
+					"title": "Ambrus, G.G., Komes, J., Struckmann, W., Kurth, I., Schweinberger, S.R. and Kovács, G., 2017. The effects of the BDNF Val66Met polymorphism on autobiographical memory. In: FENS Regional Meeting."},
+				{
+					"title": "Ambrus, G.G., Eisele, A., Windel, F., Burton, M.A. and Kovács, G., 2017. Facial identity learning in the occipital face area. In: 40th European Conference on Visual Perception. Berlin."},
+				{
+					"title": "Dotzer, M., Ambrus, G.G., Schweinberger, S.R. and Kovács, G., 2016. The occipital face area is causally involved in the formation of identity-specific face representations. In: Annual Scientific Meeting of the British Association for Cognitive Neuroscience, Budapest."},
+				{
+					"title": "Ambrus, G.G., Windel, F., Burton, M.A. and Kovács, G., 2016. The right occipital face area is involved in face identity acquisition. In: Annual Scientific Meeting of the British Association for Cognitive Neuroscience, Budapest."},
+				{
+					"title": "Trimborn, A.-B.C., Ambrus, G.G., Janacsek, K., Kovács, G. and Németh, D., 2016. The effects of bilateral TMS on probabilistic sequence learning. In: International Conference on Memory, Budapest."},
+				{
+					"title": "Windel, F., Ambrus, G.G., Burton, M.A. and Kovács, G., 2016. The stability of identity-representations acquired through brief exposure. In: International Conference on Memory, Budapest."},
+				{
+					"title": "Ambrus, G.G., Komes, J., Struckmann, W., Kurth, I., Schweinberger, S.R. and Kovács, G., 2016. The effects of the BDNF Val66Met polymorphism on autobiographical memory. In: International Conference on Memory, Budapest."},
+				{
+					"title": "Ambrus, G.G., Grotheer, M. and Kovács, G., 2016. Causal evidence of the involvement of the number form area in the visual detection of numbers and letters. In: FENS Forum, Copenhagen."},
+				{
+					"title": "Ambrus, G.G., Kovács, P., Grotheer, M. and Kovács, G., 2016. Investigating the role of the lateral occipital complex in face perception using transcranial magnetic stimulation. In: IBRO Workshop, Budapest."}
         ]
     }
 }
