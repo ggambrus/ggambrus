@@ -1,0 +1,39 @@
+[
+    {
+        "name": "Dr. Jane Smith",
+        "title": "Principal Investigator",
+        "image": "profile1.jpg",
+        "bio": "Dr. Jane Smith is a leading researcher in cognitive neuroscience with a focus on memory and learning.",
+        "research_interests": "Memory, Learning, Neuroplasticity",
+        "email": "jane.smith@lab.edu",
+        "publications": [
+            {
+                "title": "Understanding Memory",
+                "link": "https:\/\/doi.org\/10.xxxx\/xxxxxx1"
+            },
+            {
+                "title": "Neuroplasticity and Learning",
+                "link": "https:\/\/doi.org\/10.xxxx\/xxxxxx2"
+            }
+        ]
+    },
+    {
+        "name": "Dr. John Doe",
+        "title": "Postdoctoral Researcher",
+        "image": "profile2.jpg",
+        "bio": "Dr. John Doe's research focuses on neural mechanisms of attention and perception.",
+        "research_interests": "Attention, Perception, Neural Mechanisms",
+        "email": "john.doe@lab.edu",
+        "publications": [
+            {
+                "title": "Attention Mechanisms",
+                "link": "https:\/\/doi.org\/10.xxxx\/xxxxxx3"
+            },
+            {
+                "title": "Perception and Cognition",
+                "link": "https:\/\/doi.org\/10.xxxx\/xxxxxx4"
+            }
+        ]
+    }
+    \/\/ Add more members as needed
+]

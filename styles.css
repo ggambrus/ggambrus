@@ -72,32 +72,34 @@ header nav ul li a:hover {
 .member img {
     max-width: 150px;
     border-radius: 50%;
+    margin-right: 20px;
+    float: left;
 }
 
-form label {
-    display: block;
-    margin: 10px 0 5px;
+.member {
+    overflow: hidden;
 }
 
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+.member h2 {
+    margin: 0;
 }
 
-form button {
-    padding: 10px 20px;
-    background: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.member .title {
+    font-style: italic;
+    color: #666;
 }
 
-form button:hover {
-    background: #555;
+.member .bio, .member .research-interests, .member .email, .member .publications {
+    margin: 10px 0;
+}
+
+.member .publications ul {
+    list-style: none;
+    padding: 0;
+}
+
+.member .publications ul li {
+    margin: 5px 0;
 }
 
 footer {
@@ -111,7 +113,7 @@ footer {
 @media (min-width: 768px) {
     .member {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
     }
 
     .member img {
