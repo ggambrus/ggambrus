@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.intro, .highlights, .members, .publications, .contact {
+    margin: 20px 0;
+}
+
+.intro h1, .highlights h2, .members h1, .publications h1, .contact h1 {
+    margin-top: 0;
+}
+
+.news-item, .member, .publication {
+    background: #f4f4f4;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+}
+
+.news-item h3, .member h2, .publication h2 {
+    margin-top: 0;
+}
+
+.member img {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .member {
+        display: flex;
+        align-items: center;
+    }
+
+    .member img {
+        margin-right: 20px;
+    }
+
+    header nav ul li {
+        margin-left: 30px;
+    }
+}
