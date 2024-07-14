@@ -3,12 +3,12 @@
         "title": "Title of the Research Paper 1",
         "authors": "A. Author, B. Author, C. Author",
         "abstract": "Brief summary of the paper 1.",
-        "doi": "https://doi.org/10.xxxx/xxxxxx1"
+        "doi": "https:\/\/doi.org\/10.xxxx\/xxxxxx1"
     },
     {
         "title": "Title of the Research Paper 2",
         "authors": "D. Author, E. Author, F. Author",
         "abstract": "Brief summary of the paper 2.",
-        "doi": "https://doi.org/10.xxxx/xxxxxx2"
+        "doi": "https:\/\/doi.org\/10.xxxx\/xxxxxx2"
     }
 ]
