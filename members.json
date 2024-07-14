@@ -21,7 +21,7 @@
         "name": "Dr. John Doe",
         "title": "Postdoctoral Researcher",
         "image": "profile2.jpg",
-        "bio": "Dr. John Doe's research focuses on neural mechanisms of attention and perception.",
+        "bio": "Dr. John Doe\u0027s research focuses on neural mechanisms of attention and perception.",
         "research_interests": "Attention, Perception, Neural Mechanisms",
         "email": "john.doe@lab.edu",
         "publications": [
