@@ -44,7 +44,7 @@
     margin-top: 20px;
 }
 
-.profile-details h2 {
+.profile-details h2, .profile-details h3 {
     margin-top: 0;
 }
 

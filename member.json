@@ -1,6 +1,6 @@
 {
     "name": "Dr. Jane Doe",
-    "photo": "thispersondoesnotexist_02.jpg",
+    "photo": "jane_doe.jpg",
     "external_links": {
         "orcid": "https:\/\/orcid.org\/0000-0002-1825-0097",
         "researchgate": "https:\/\/www.researchgate.net\/profile\/Jane_Doe",
@@ -11,14 +11,34 @@
         "M.Sc. in Psychology, Example University",
         "B.Sc. in Biology, Example University"
     ],
-    "publications": [
-        {
-            "title": "Groundbreaking Research on Cognitive Functions",
-            "link": "https:\/\/example.com\/publication1"
-        },
-        {
-            "title": "Innovative Approaches in Neuroscience",
-            "link": "https:\/\/example.com\/publication2"
-        }
-    ]
+    "publications": {
+        "journal_articles": [
+            {
+                "title": "Groundbreaking Research on Cognitive Functions",
+                "link": "https:\/\/example.com\/publication1"
+            },
+            {
+                "title": "Innovative Approaches in Neuroscience",
+                "link": "https:\/\/example.com\/publication2"
+            }
+        ],
+        "book_chapters": [
+            {
+                "title": "Chapter on Cognitive Science",
+                "link": "https:\/\/example.com\/bookchapter1"
+            }
+        ],
+        "talks": [
+            {
+                "title": "Keynote on Neural Networks",
+                "link": "https:\/\/example.com\/talk1"
+            }
+        ],
+        "conferences": [
+            {
+                "title": "Neuroscience Conference 2024",
+                "link": "https:\/\/example.com\/conference1"
+            }
+        ]
+    }
 }
