@@ -1,0 +1,24 @@
+{
+    "name": "Jane Doe",
+    "photo": "thispersondoesnotexist_03.jpg",
+    "external_links": {
+        "orcid": "https:\/\/orcid.org\/0009-0002-7683-8179",
+        "researchgate": "https:\/\/www.researchgate.net\/profile\/Madeline-Ely-2",
+    },
+    "education": [
+        "BSc (Hons) in Psychology, Bournemouth University"
+    ],
+    "publications": {
+        "journal_articles": [],
+        "book_chapters": [],
+        "talks": [
+				{"title": "The Neural Basis of Facial Expression Processing-Insights from Cross-Dataset Multivariate Pattern Analysis. 10 April, 2024. Bournemouth, UK"}
+        ],
+        "conferences": [
+				{
+					"title": "Ambrus, G.G. and Ely, M., 2024. Exploring Emotional Face Familiarity Effects: Insights from EEG Multivariate Pattern Analysis. In: DUCOG 15, Conference of the Central European Cognitive Science Association, Dubrovnik, Croatia."},
+				{
+					"title": "Ely, M. and Ambrus, G.G., 2024. Shared neural signals for the processing of facial expressions. In: INC2024, International Neuroscience Conference, Pécs, Hungary."}
+        ]
+    }
+}
