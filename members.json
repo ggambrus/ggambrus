@@ -18,22 +18,13 @@
         ]
     },
     {
-        "name": "Dr. John Doe",
+        "name": "Dr. Jane Doe",
         "title": "Postdoctoral Researcher",
         "image": "thispersondoesnotexist_03.jpg",
-        "bio": "Dr. John Doe\u0027s research focuses on neural mechanisms of attention and perception.",
+        "bio": "Dr. Jane Doe\u0027s research focuses on neural mechanisms of attention and perception.",
         "research_interests": "Attention, Perception, Neural Mechanisms",
-        "email": "john.doe@lab.edu",
-        "publications": [
-            {
-                "title": "Attention Mechanisms",
-                "link": "https:\/\/doi.org\/10.xxxx\/xxxxxx2"
-            },
-            {
-                "title": "Perception and Cognition",
-                "link": "https:\/\/doi.org\/10.xxxx\/xxxxxx2"
-            }
-        ]
+        "email": "jane.doe@lab.edu",
+        "publications": [ ]
     }
     
 ]
