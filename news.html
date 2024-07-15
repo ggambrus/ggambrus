@@ -14,7 +14,7 @@
         <section class="news">
             <div class="container">
                 <h1>Latest News</h1>
-                <div id="news-list">
+                <div id="news-list" class="news-list">
                     <!-- News items will be dynamically loaded here -->
                 </div>
             </div>
@@ -41,23 +41,27 @@
                             newsItem.appendChild(img);
                         }
                         
+                        const content = document.createElement('div');
+                        content.classList.add('news-content');
+                        
                         const title = document.createElement('h2');
                         title.textContent = news.title;
-                        newsItem.appendChild(title);
+                        content.appendChild(title);
                         
                         if (news.text) {
                             const text = document.createElement('p');
                             text.textContent = news.text;
-                            newsItem.appendChild(text);
+                            content.appendChild(text);
                         }
                         
                         if (news.link) {
                             const link = document.createElement('a');
                             link.href = news.link;
                             link.textContent = 'Read more';
-                            newsItem.appendChild(link);
+                            content.appendChild(link);
                         }
                         
+                        newsItem.appendChild(content);
                         newsList.appendChild(newsItem);
                     });
                 })

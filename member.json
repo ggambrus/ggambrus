@@ -41,9 +41,9 @@
 			{"title": "Grundey, J., Amu, R., Ambrus, G. G., Batsikadze, G., Paulus, W., & Nitsche, M. A. (2015). Double dissociation of working memory and attentional processes in smokers and non-smokers with and without nicotine. Psychopharmacology, 232(14), 2491–2501. doi:10.1007/s00213-015-3880-7", "link": "https:\/\/doi.org\/10.1007/s00213-015-3880-7"},
 			{"title": "Chaieb, L., Antal, A., Ambrus, G. G., & Paulus, W. (2014). Brain-derived neurotrophic factor: its impact upon neuroplasticity and neuroplasticity inducing transcranial brain stimulation protocols. Neurogenetics, 15(1), 1–11. doi:10.1007/s10048-014-0393-1", "link": "https:\/\/doi.org\/10.1007/s10048-014-0393-1"},
 			{"title": "Turi, Zsolt, Ambrus, G. G., Ho, K.-A., Sengupta, T., Paulus, W., & Antal, A. (2014). When size matters: large electrodes induce greater stimulation-related cutaneous discomfort than smaller electrodes at equivalent current density. Brain Stimulation, 7(3), 460–467. doi:10.1016/j.brs.2014.01.059", "link": "https:\/\/doi.org\/10.1016/j.brs.2014.01.059"},
-			{"title": "Antal, A., Ambrus, G. G., & Chaieb, L. (2014a). The impact of electrical stimulation techniques on behavior. Wiley Interdisciplinary Reviews. Cognitive Science, 5(6), 649–659. doi:10.1002/wcs.1319", "link": "https:\/\/doi.org\/10.1002/wcs.1319"},
+			{"title": "Antal, A., Ambrus, G. G., & Chaieb, L. (2014). The impact of electrical stimulation techniques on behavior. Wiley Interdisciplinary Reviews. Cognitive Science, 5(6), 649–659. doi:10.1002/wcs.1319", "link": "https:\/\/doi.org\/10.1002/wcs.1319"},
 			{"title": "Chaieb, Leila, Antal, A., Pisoni, A., Saiote, C., Opitz, A., Ambrus, G. G., … Paulus, W. (2014). Safety of 5 kHz tACS. Brain Stimulation, 7(1), 92–96. doi:10.1016/j.brs.2013.08.004", "link": "https:\/\/doi.org\/10.1016/j.brs.2013.08.004"},
-			{"title": "Antal, A., Ambrus, G. G., & Chaieb, L. (2014b). Toward unraveling readingâ€“related modulations of tDCSâ€“induced neuroplasticity in the human visual cortex. Frontiers in Psychology, 5, 642. doi:10.3389/fpsyg.2014.00642", "link": "https:\/\/doi.org\/10.3389/fpsyg.2014.00642"},
+			{"title": "Antal, A., Ambrus, G. G., & Chaieb, L. (2014). Toward unraveling reading-related modulations of tDCS-induced neuroplasticity in the human visual cortex. Frontiers in Psychology, 5, 642. doi:10.3389/fpsyg.2014.00642", "link": "https:\/\/doi.org\/10.3389/fpsyg.2014.00642"},
 			{"title": "Turi, Zs, Ambrus, G. G., Janacsek, K., Emmert, K., Hahn, L., Paulus, W., & Antal, A. (2013). Both the cutaneous sensation and phosphene perception are modulated in a frequency-specific manner during transcranial alternating current stimulation. Restorative Neurology and Neuroscience, 31(3), 275–285. doi:10.3233/RNN-120297", "link": "https:\/\/doi.org\/10.3233/RNN-120297"},
 			{"title": "Ambrus, G. G., Al-Moyed, H., Chaieb, L., Sarp, L., Antal, A., & Paulus, W. (2012). The fade-in – Short stimulation – Fade out approach to sham tDCS – Reliable at 1 mA for naïve and experienced subjects, but not investigators. Brain Stimulation, 5(4), 499–504. doi:10.1016/j.brs.2011.12.001", "link": "https:\/\/doi.org\/10.1016/j.brs.2011.12.001"},
 			{"title": "Ambrus, G. G., Antal, A., & Paulus, W. (2011). Comparing cutaneous perception induced by electrical stimulation using rectangular and round shaped electrodes. Clinical Neurophysiology: Official Journal of the International Federation of Clinical Neurophysiology, 122(4), 803–807. doi:10.1016/j.clinph.2010.08.023", "link": "https:\/\/doi.org\/10.1016/j.clinph.2010.08.023"},
@@ -53,15 +53,18 @@
         ],
         "book_chapters": [
             {
-                "title": "Chapter on Cognitive Science",
-                "link": "https:\/\/example.com\/bookchapter1"
+                "title": "Miniussi, C., Ambrus, G. G., Walsh, V., Pellicciari, M. C., & Antal, A. (2012). Transcranial Magnetic and Electric Stimulation in Perception and Cognition Research. In Transcranial brain stimulation (pp. 337-357). CRC Press Taylor & Francis Group",
+                "link": "https:\/\/doi.org\/10.1201\/b14174-21"
             }
         ],
         "talks": [
-            {
-                "title": "Keynote on Neural Networks",
-                "link": "https:\/\/example.com\/talk1"
-            }
+				{"title": "Investigating Face Perception Using Cross-Experiment Multivariate Pattern Analysis of Neural Time-Series Data, INRC - “Integrating Cognitive and Computational Neuroscience”. 12 June, 2024. Bournemouth, UK"},
+				{"title": "Machine Learing in EEG, Cutting Gardens, 16 October 2023, Bournemouth, UK"},
+				{"title": "Exploring Generalizability in Recognition Memory Signals Through Multivariate Cross-Classification, GEM 2023, 12 June 2023, Bochum, Germany"},
+				{"title": "Multivariate Pattern Analysis Across Experiments, Zhejiang Normal University(China, Online), 23 March 2021. Online visiting programme in cooperation with the Zhejiang Normal University in Jinhua, China"},
+				{"title": "Investigating the Role of the Occipital Face Area, Zhejiang Normal University (China, Online), 16 March 2021. Online visiting programme in cooperation with the Zhejiang Normal University in Jinhua, China"},
+				{"title": "Investigating face-identity processing, Lecture series on Biomedical Imaging in Neurosciences: Basic research and current results, 21 June 2019, Jena, Germany"},
+				{"title": "Investigating the face perception network, University of Kent, 16 February 2017. School of Psychology, Keynes College, University of Kent"}
         ],
         "conferences": [
 				{
