@@ -26,6 +26,7 @@
     <script src="include.js"></script>
 	<script>
 		document.addEventListener("DOMContentLoaded", function() {
+			// Fetch and display news items
 			fetch('news.json')
 				.then(response => response.json())
 				.then(data => {
@@ -34,7 +35,7 @@
 						const newsItem = document.createElement('div');
 						newsItem.classList.add('news-item');
 
-						// Generate a unique ID from the title by removing spaces and using camel casing
+						// Generate a unique ID from the title by removing non-alphanumeric characters and using camel casing
 						const newsId = news.title
 										.toLowerCase()
 										.replace(/[^a-z0-9\s]/g, '') // Remove non-alphanumeric characters
@@ -42,53 +43,49 @@
 										.map((word, index) => index === 0 ? word : word.charAt(0).toUpperCase() + word.slice(1))
 										.join('');
 						newsItem.id = newsId;
-						
+
 						if (news.image) {
 							const img = document.createElement('img');
 							img.src = news.image;
 							img.alt = news.title;
 							newsItem.appendChild(img);
 						}
-						
+
 						const content = document.createElement('div');
 						content.classList.add('news-content');
-						
+
 						const title = document.createElement('h2');
 						title.textContent = news.title;
 						content.appendChild(title);
-						
+
 						if (news.text) {
 							const text = document.createElement('p');
 							text.textContent = news.text;
 							content.appendChild(text);
 						}
-						
+
 						if (news.link) {
 							const link = document.createElement('a');
 							link.href = news.link;
 							link.textContent = 'Read more';
 							content.appendChild(link);
 						}
-						
+
 						newsItem.appendChild(content);
 						newsList.appendChild(newsItem);
 					});
+
+					// Scroll to the element with the ID specified in the URL hash
+					const hash = window.location.hash.substring(1); // Remove the '#' from the beginning
+					if (hash) {
+						const element = document.getElementById(hash);
+						if (element) {
+							element.scrollIntoView({ behavior: 'smooth' });
+						}
+					}
 				})
 				.catch(error => console.error('Error fetching news:', error));
 		});
-	</script>
-	
-	<script>
-	     // Scroll to the element with the ID specified in the URL hash
-		 document.addEventListener("DOMContentLoaded", function() {
-                const hash = window.location.hash.substring(1); // Remove the '#' from the beginning
-                if (hash) {
-                    const element = document.getElementById(hash);
-                    if (element) {
-                        element.scrollIntoView({ behavior: 'smooth' });
-                    }
-                }
-            })
 	</script>
 	
 </body>
