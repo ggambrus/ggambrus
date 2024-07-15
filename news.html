@@ -37,6 +37,7 @@
 						// Generate a unique ID from the title by removing spaces and using camel casing
 						const newsId = news.title
 										.toLowerCase()
+										.replace(/[^a-z0-9\s]/g, '') // Remove non-alphanumeric characters
 										.split(' ')
 										.map((word, index) => index === 0 ? word : word.charAt(0).toUpperCase() + word.slice(1))
 										.join('');
