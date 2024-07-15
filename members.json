@@ -5,7 +5,7 @@
         "title": "Lab Head",
         "image": "profile_images\/GGA.jpg",
         "bio": "Dr. Géza Gergely Ambrus is cognitive neuroscientist with a research focus on the neural signatures of perception,  memory and learning.",
-        "research_interests": "Memory, Learning, Person perception, Neuroplasticity",
+        "research_interests": "Memory, Learning, Person Perception, Neuroplasticity",
         "publications": [
             {
                 "title": "Shared neural codes of recognition memory",
@@ -18,13 +18,11 @@
         ]
     },
     {
-        "name": "Dr. Jane Doe",
+        "name": "Madeline Ely, BSc",
         "title": "Postdoctoral Researcher",
-        "image": "thispersondoesnotexist_03.jpg",
-        "bio": "Dr. Jane Doe\u0027s research focuses on neural mechanisms of attention and perception.",
-        "research_interests": "Attention, Perception, Neural Mechanisms",
-        "email": "jane.doe@lab.edu",
+        "image": "profile_images\/MME.jpg",
+        "bio": "Madeline Ely\u0027s research focuses on neural mechanisms of the neural mechanism behind the perception and processing of facial expressions.",
+        "research_interests": "Affective Neuroscience, Facec Processing",
         "publications": [ ]
     }
-    
 ]
