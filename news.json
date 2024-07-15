@@ -2,7 +2,7 @@
     {
         "title": "New Research Published",
         "image": "news_images\/scirep2024.jpg",
-        "link": "news1.html",
+        "link": "https:\/\/www.nature.com\/articles\/s41598-024-66158-y",
 		"date": "09-07-2024",
         "text": "Published in Scientific Reports on July 9, 2024, our recent study explores the electrophysiological markers of successful memory retrieval, using EEG data from six experiments with healthy participants. The research utilized a dataset of highly familiar and unfamiliar faces to examine the temporal evolution of shared information in different memory conditions. \n Findings reveal that recognition memory signals for faces generalized from about 200 ms post-stimulus onset. When trained on non-face datasets, an early to late differentiation (200-300 ms to post-400 ms) emerged across most brain regions. Notably, cross-classification of non-face stimuli, including music and object/scene associations, was most effective in the late period.\n A key discovery was the distinct neural patterns for familiar versus remembered objects. For remembered objects, shared signals appeared only in the late window, whereas familiar objects also showed early-period cross-classification success.\n In summary, this study found that late neural signals of memory retrieval are consistent across sensory modalities and stimulus types."
     },
