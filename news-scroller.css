@@ -1,7 +1,7 @@
 .news-scroller {
     display: flex;
     overflow-x: auto;
-    white-space: nowrap;
+    white-space: wrap;
     padding: 20px;
     gap: 10px;
     border: 1px solid #ddd;
@@ -36,7 +36,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 3; /* Number of lines to show */
+    -webkit-line-clamp: 5; /* Number of lines to show */
     -webkit-box-orient: vertical;
 }
 
