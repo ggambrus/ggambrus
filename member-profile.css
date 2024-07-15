@@ -1,6 +1,7 @@
 .profile {
     padding: 20px;
-	overflow-wrap: anywhere;
+	word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .profile .container {
@@ -25,6 +26,7 @@
 }
 
 .external-links {
+	line-height: 200%;
     margin-top: 10px;
 }
 
