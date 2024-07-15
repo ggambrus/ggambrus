@@ -24,70 +24,79 @@
     
     <script src="include.js"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            fetch('members.json')
-                .then(response => response.json())
-                .then(data => {
-                    const membersList = document.getElementById('members-list');
-                    data.forEach(member => {
-                        const memberDiv = document.createElement('div');
-                        memberDiv.classList.add('member');
+		document.addEventListener("DOMContentLoaded", function() {
+			fetch('members.json')
+				.then(response => response.json())
+				.then(data => {
+					const membersList = document.getElementById('members-list');
+					data.forEach(member => {
+						const memberDiv = document.createElement('div');
+						memberDiv.classList.add('member');
 
-                        const img = document.createElement('img');
-                        img.src = member.image;
-                        img.alt = `${member.name}'s profile picture`;
-                        memberDiv.appendChild(img);
+						const img = document.createElement('img');
+						img.src = member.image;
+						img.alt = `${member.name}'s profile picture`;
+						memberDiv.appendChild(img);
 
-                        const name = document.createElement('h2');
-                        name.textContent = member.name;
-                        memberDiv.appendChild(name);
+						const name = document.createElement('h2');
+						name.textContent = member.name;
+						memberDiv.appendChild(name);
 
-                        const title = document.createElement('p');
-                        title.classList.add('title');
-                        title.textContent = member.title;
-                        memberDiv.appendChild(title);
+						if (member.profile_page) {
+							const profileLink = document.createElement('a');
+							profileLink.href = member.profile_page;
+							profileLink.target = "_blank";
+							profileLink.textContent = 'View Profile';
+							memberDiv.appendChild(profileLink);
+						}
 
-                        const bio = document.createElement('p');
-                        bio.classList.add('bio');
-                        bio.textContent = member.bio;
-                        memberDiv.appendChild(bio);
+						const title = document.createElement('p');
+						title.classList.add('title');
+						title.textContent = member.title;
+						memberDiv.appendChild(title);
 
-                        const researchInterests = document.createElement('p');
-                        researchInterests.classList.add('research-interests');
-                        researchInterests.innerHTML = `<strong>Research Interests:</strong> ${member.research_interests}`;
-                        memberDiv.appendChild(researchInterests);
+						const bio = document.createElement('p');
+						bio.classList.add('bio');
+						bio.textContent = member.bio;
+						memberDiv.appendChild(bio);
 
-                        const email = document.createElement('p');
-                        email.classList.add('email');
-                        email.innerHTML = `<strong>Email:</strong> <a href="mailto:${member.email}">${member.email}</a>`;
-                        memberDiv.appendChild(email);
+						const researchInterests = document.createElement('p');
+						researchInterests.classList.add('research-interests');
+						researchInterests.innerHTML = `<strong>Research Interests:</strong> ${member.research_interests}`;
+						memberDiv.appendChild(researchInterests);
 
-                        if (member.publications.length > 0) {
-                            const publications = document.createElement('div');
-                            publications.classList.add('publications');
-                            const publicationsTitle = document.createElement('h3');
-                            publicationsTitle.textContent = 'Selected Publications:';
-                            publications.appendChild(publicationsTitle);
+						const email = document.createElement('p');
+						email.classList.add('email');
+						email.innerHTML = `<strong>Email:</strong> <a href="mailto:${member.email}">${member.email}</a>`;
+						memberDiv.appendChild(email);
 
-                            const publicationsList = document.createElement('ul');
-                            member.publications.forEach(pub => {
-                                const pubItem = document.createElement('li');
-                                const pubLink = document.createElement('a');
-                                pubLink.href = pub.link;
-                                pubLink.target = "_blank";
-                                pubLink.textContent = pub.title;
-                                pubItem.appendChild(pubLink);
-                                publicationsList.appendChild(pubItem);
-                            });
-                            publications.appendChild(publicationsList);
-                            memberDiv.appendChild(publications);
-                        }
+						if (member.publications.length > 0) {
+							const publications = document.createElement('div');
+							publications.classList.add('publications');
+							const publicationsTitle = document.createElement('h3');
+							publicationsTitle.textContent = 'Selected Publications:';
+							publications.appendChild(publicationsTitle);
 
-                        membersList.appendChild(memberDiv);
-                    });
-                })
-                .catch(error => console.error('Error fetching members:', error));
-        });
-    </script>
+							const publicationsList = document.createElement('ul');
+							member.publications.forEach(pub => {
+								const pubItem = document.createElement('li');
+								const pubLink = document.createElement('a');
+								pubLink.href = pub.link;
+								pubLink.target = "_blank";
+								pubLink.textContent = pub.title;
+								pubItem.appendChild(pubLink);
+								publicationsList.appendChild(pubItem);
+							});
+							publications.appendChild(publicationsList);
+							memberDiv.appendChild(publications);
+						}
+
+						membersList.appendChild(memberDiv);
+					});
+				})
+				.catch(error => console.error('Error fetching members:', error));
+		});
+	</script>
+
 </body>
 </html>
