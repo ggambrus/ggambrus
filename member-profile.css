@@ -1,5 +1,6 @@
 .profile {
     padding: 20px;
+	overflow-wrap: anywhere;
 }
 
 .profile .container {
