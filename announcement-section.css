@@ -7,10 +7,12 @@
 }
 
 .announcement-item {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
     display: flex;
     flex-wrap: wrap;
     border-bottom: 1px solid #e0e0e0;
-    padding: 20px 0;
+    padding: 10px;
     position: relative;
 }
 
@@ -26,7 +28,7 @@
 
 .announcement-title-container h3 {
     margin: 0;
-    font-size: 1.5em;
+    font-size: 1.25em;
     color: #333;
     flex-grow: 1;
 }
