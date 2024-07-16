@@ -60,9 +60,14 @@
 }
 
 .announcement-item p {
-    margin: 0 0 10px 0;
-    color: #666;
-    font-size: 0.9em;
+		margin: 0 0 10px 0;
+		color: #666;
+		font-size: 0.9em;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		 -webkit-line-clamp: 5;
+		 -webkit-box-orient:  block-axis;
 }
 
 .announcement-item a {
@@ -100,16 +105,10 @@
         text-align: left;
     }
 
-	.announcement-item p {
-		margin: 0 0 10px 0;
-		color: #666;
-		font-size: 0.9em;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		display: -webkit-box;
-		 -webkit-line-clamp: 5;
-		 -webkit-box-orient:  block-axis;
-	}
+    .announcement-item p {
+        width: 100%;
+    }
+
     .announcement-item .announcement-date {
         margin-top: 10px;
         font-size: 0.8em;
