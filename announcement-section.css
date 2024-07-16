@@ -1,15 +1,4 @@
 /* General styling for announcements section */
-.highlights {
-    padding: 40px 0;
-    background-color: #f9f9f9;
-}
-
-.highlights h2 {
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
-}
 
 .announcements-section {
     display: flex;
