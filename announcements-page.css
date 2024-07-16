@@ -1,0 +1,91 @@
+/* General styling for announcements section */
+.news {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+.news h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.announcements-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.announcement-item {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 20px 0;
+    position: relative;
+}
+
+.announcement-item:last-child {
+    border-bottom: none;
+}
+
+.announcement-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.announcement-title-container h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.pin-icon, .inactive-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.announcement-date {
+    margin-bottom: 20px;
+    font-size: 0.8em;
+    color: #999;
+    text-align: left;
+}
+
+.announcement-content-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.announcement-content-container img {
+    max-width: 150px;
+    border-radius: 5px;
+}
+
+.announcement-content-container p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.inactive {
+    background-color: #f0f0f0; /* Different background color for inactive announcements */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .announcement-content-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .announcement-content-container img {
+        margin-bottom: 10px;
+        max-width: 100%;
+    }
+}
