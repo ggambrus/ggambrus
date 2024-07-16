@@ -43,9 +43,10 @@
 }
 
 .pin-icon, .inactive-icon {
-    width: 20px;
-    height: 20px;
+    width: auto;
+    height: 32px;
     margin-left: 10px;
+    margin-right : 10px;
 }
 
 .announcement-date {
