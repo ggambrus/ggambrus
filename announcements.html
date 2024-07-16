@@ -50,7 +50,7 @@
                         // Add pin icon if announcement is pinned
                         if (announcement.pinned) {
                             const pinIcon = document.createElement('img');
-                            pinIcon.src = 'images/pin.png';
+                            pinIcon.src = 'pin.png';
                             pinIcon.alt = 'Pinned';
                             pinIcon.classList.add('pin-icon');
                             titleContainer.appendChild(pinIcon);
@@ -59,7 +59,7 @@
                         // Add inactive icon if announcement is inactive
                         if (!announcement.active) {
                             const inactiveIcon = document.createElement('img');
-                            inactiveIcon.src = 'images/inactive.png';
+                            inactiveIcon.src = 'inactive.png';
                             inactiveIcon.alt = 'Inactive';
                             inactiveIcon.classList.add('inactive-icon');
                             titleContainer.appendChild(inactiveIcon);
