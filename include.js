@@ -12,11 +12,6 @@ function loadHTML(file, elementId) {
         .catch(error => console.error(error));
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    loadHTML('header.html', 'header-placeholder');
-    loadHTML('footer.html', 'footer-placeholder');
-});
-
 function handleMenu() {
 			
 			const hamburgerIcon = document.getElementById('hamburger-icon');
@@ -48,3 +43,10 @@ function handleMenu() {
 			});
 		
 	};
+
+document.addEventListener("DOMContentLoaded", function() {
+    loadHTML('header.html', 'header-placeholder');
+    loadHTML('footer.html', 'footer-placeholder');
+	handleMenu();
+});
+
