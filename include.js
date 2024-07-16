@@ -26,6 +26,7 @@ function loadHTML(file, elementId) {
 document.addEventListener("DOMContentLoaded", function() {
     loadHTML('header.html', 'header-placeholder');
     loadHTML('footer.html', 'footer-placeholder');
+	init();
 });
 
 
