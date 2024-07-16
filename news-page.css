@@ -17,6 +17,11 @@
     flex-direction: column;
 }
 
+.announcements-list {
+    display: flex;
+    flex-direction: column;
+}
+
 .news-item {
     display: flex;
     flex-direction: column;
