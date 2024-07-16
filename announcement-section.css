@@ -1,16 +1,14 @@
-/* General styling for announcements section */
-#announcements-section {
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    margin: 20px 0;
+.announcements-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .announcement-item {
+    display: flex;
+    flex-wrap: wrap;
     border-bottom: 1px solid #e0e0e0;
     padding: 20px 0;
-    display: flex;
-    align-items: center;
 }
 
 .announcement-item:last-child {
@@ -18,13 +16,14 @@
 }
 
 .announcement-item h3 {
+    width: 100%;
     margin: 0 0 10px 0;
     font-size: 1.5em;
     color: #333;
 }
 
 .announcement-item img {
-    max-width: 100px;
+    max-width: 150px;
     margin-right: 20px;
     border-radius: 5px;
     flex-shrink: 0;
@@ -32,6 +31,9 @@
 
 .announcement-content {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .announcement-item .announcement-date {
@@ -46,8 +48,6 @@
     margin: 0 0 10px 0;
     color: #666;
     font-size: 0.9em;
-    display: inline-block;
-    width: 70%;
 }
 
 .announcement-item a {
@@ -63,4 +63,32 @@
 /* Inactive announcements styling */
 .inactive {
     background-color: #f0f0f0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .announcement-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .announcement-item img {
+        margin: 0 0 10px 0;
+        max-width: 100%;
+    }
+
+    .announcement-content {
+        text-align: center;
+    }
+
+    .announcement-item p {
+        width: 100%;
+    }
+
+    .announcement-item .announcement-date {
+        margin-top: 10px;
+        font-size: 0.8em;
+        color: #999;
+        text-align: center;
+    }
 }
