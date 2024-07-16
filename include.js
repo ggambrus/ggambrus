@@ -15,9 +15,9 @@ function loadHTML(file, elementId) {
 document.addEventListener("DOMContentLoaded", function() {
     loadHTML('header.html', 'header-placeholder');
     loadHTML('footer.html', 'footer-placeholder');
-});
+//});
 
-document.addEventListener("DOMContentLoaded", function() {
+//document.addEventListener("DOMContentLoaded", function() {
             const hamburgerIcon = document.getElementById('hamburger-icon');
             const mobileMenu = document.getElementById('mobile-menu');
 
