@@ -1,3 +1,13 @@
+<script>
+	function myFunction() {
+	  var x = document.getElementById("mobile-menu");
+	  if (x.style.display === "block") {
+		x.style.display = "none";
+	  } else {
+		x.style.display = "block";
+	  }
+	}
+</script>
 <header>
 	<link rel="stylesheet" href="navigation.css">
 	<link rel="shortcut icon" type="image/ico" href="favicon.ico">
@@ -15,7 +25,7 @@
 				<li><a href="news.html">News</a></li>
 			</ul>
 			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-				<img src="hamburger-icon.png" alt="Menu" id="hamburger-icon">
+				<img src="hamburger-icon.png" alt="Menu" id="hamburger-icon" height="32px">
 			</a>
 		</nav>
 	</div>
@@ -29,13 +39,3 @@
 		</ul>
 	</div>
 </header>
-<script>
-	function myFunction() {
-	  var x = document.getElementById("mobile-menu");
-	  if (x.style.display === "block") {
-		x.style.display = "none";
-	  } else {
-		x.style.display = "block";
-	  }
-	}
-</script>
