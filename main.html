@@ -146,7 +146,7 @@
 				content.classList.add('announcement-content');
 
 				const text = document.createElement('p');
-				text.textContent = announcement.text;
+				text.innerHTML = announcement.text;
 				content.appendChild(text);
 
 				const link = document.createElement('a');
