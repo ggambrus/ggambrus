@@ -84,8 +84,9 @@
 
                         if (announcement.text) {
                             const text = document.createElement('p');
-                            text.textContent = announcement.text;
-                            contentContainer.appendChild(text);
+							text.innerHTML = announcement.text;
+                            //text.textContent = announcement.text;
+                            //contentContainer.appendChild(text);
                         }
 
                         announcementItem.appendChild(contentContainer);
