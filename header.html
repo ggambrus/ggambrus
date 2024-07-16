@@ -4,39 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="navigation.css">
-	<script type="text/javascript">
-		function handleMenu() {
-				document.addEventListener("DOMContentLoaded", function() {
-				const hamburgerIcon = document.getElementById('hamburger-icon');
-				const mobileMenu    = document.getElementById('mobile-menu');
-
-				if (hamburgerIcon) {
-					console.log("Hamburger icon exists");
-				} else {
-					console.error("Hamburger icon not found");
-				}
-
-				hamburgerIcon.addEventListener('click', function(event) {
-					event.stopPropagation();
-					console.log("Hamburger icon clicked");
-					if (mobileMenu.style.display === 'block') {
-						mobileMenu.style.display = 'none';
-						console.log("Hiding mobile menu");
-					} else {
-						mobileMenu.style.display = 'block';
-						console.log("Showing mobile menu");
-					}
-				});
-
-				window.addEventListener('click', function(event) {
-					if (!event.target.closest('.mobile-nav') && !event.target.closest('#mobile-menu')) {
-						mobileMenu.style.display = 'none';
-						console.log("Click outside, hiding mobile menu");
-					}
-				});
-			});
-		};
-	</script>	
 </head>
 
 <body onload="javascript:handleMenu();">
@@ -71,4 +38,40 @@
         </div>
     </header>
 </body>
+
+<script type="text/javascript">
+	function handleMenu() {
+			document.addEventListener("DOMContentLoaded", function() {
+			const hamburgerIcon = document.getElementById('hamburger-icon');
+			const mobileMenu    = document.getElementById('mobile-menu');
+
+			if (hamburgerIcon) {
+				console.log("Hamburger icon exists");
+			} else {
+				console.error("Hamburger icon not found");
+			}
+
+			hamburgerIcon.addEventListener('click', function(event) {
+				event.stopPropagation();
+				console.log("Hamburger icon clicked");
+				if (mobileMenu.style.display === 'block') {
+					mobileMenu.style.display = 'none';
+					console.log("Hiding mobile menu");
+				} else {
+					mobileMenu.style.display = 'block';
+					console.log("Showing mobile menu");
+				}
+			});
+
+			window.addEventListener('click', function(event) {
+				if (!event.target.closest('.mobile-nav') && !event.target.closest('#mobile-menu')) {
+					mobileMenu.style.display = 'none';
+					console.log("Click outside, hiding mobile menu");
+				}
+			});
+		});
+	};
+</script>
+
 </html>
+
