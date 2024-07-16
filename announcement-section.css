@@ -66,9 +66,13 @@
 }
 
 .announcement-item a {
-    color: #007BFF;
     text-decoration: none;
-    font-weight: bold;
+    color: #333;
+    background: #ddd;
+    padding: 5px 10px;
+    border-radius: 3px;
+    align-self: flex-end; /* Ensure the link is aligned to the bottom right */
+    margin-top: 10px;
 }
 
 .announcement-item a:hover {
@@ -96,10 +100,16 @@
         text-align: left;
     }
 
-    .announcement-item p {
-        width: 100%;
-    }
-
+	.announcement-item p {
+		margin: 0 0 10px 0;
+		color: #666;
+		font-size: 0.9em;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		 -webkit-line-clamp: 5;
+		 -webkit-box-orient:  block-axis;
+	}
     .announcement-item .announcement-date {
         margin-top: 10px;
         font-size: 0.8em;
