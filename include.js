@@ -48,3 +48,6 @@ document.addEventListener("DOMContentLoaded", function() {
     loadHTML('footer.html', 'footer-placeholder');
 });
 
+window.onload = function () {
+	handleMenu();
+};
