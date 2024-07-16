@@ -1,155 +1,146 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header</title>
-    <style>
-        /* General Styles */
-        header {
-            background-color: #333;
-            padding: 20px 0;
-            border-bottom: 1px solid #e0e0e0;
-        }
+<style>
+	/* General Styles */
+	header {
+		background-color: #333;
+		padding: 20px 0;
+		border-bottom: 1px solid #e0e0e0;
+	}
 
-        .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 
-        .logo {
-            display: flex;
-            align-items: center;
-        }
+	.logo {
+		display: flex;
+		align-items: center;
+	}
 
-        .logo img {
-            margin-right: 10px;
-        }
+	.logo img {
+		margin-right: 10px;
+	}
 
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-        }
+	nav ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+	}
 
-        nav ul li {
-            margin-left: 20px;
-        }
+	nav ul li {
+		margin-left: 20px;
+	}
 
-        nav ul li a {
-            text-decoration: none;
-            color: #fff;
-        }
+	nav ul li a {
+		text-decoration: none;
+		color: #fff;
+	}
 
-        .desktop-nav {
-            display: flex;
-        }
+	.desktop-nav {
+		display: flex;
+	}
 
-        .mobile-nav {
-            display: none;
-        }
+	.mobile-nav {
+		display: none;
+	}
 
-        #mobile-menu {
-            display: none;
-            position: absolute;
-            top: 70px;
-            left: 0;
-            width: 100%;
-            background-color: #fff;
-            border-top: 1px solid #e0e0e0;
-            z-index: 1000;
-        }
+	#mobile-menu {
+		display: none;
+		position: absolute;
+		top: 70px;
+		left: 0;
+		width: 100%;
+		background-color: #fff;
+		border-top: 1px solid #e0e0e0;
+		z-index: 1000;
+	}
 
-        #mobile-menu ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
+	#mobile-menu ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
 
-        #mobile-menu ul li {
-            padding: 10px 20px;
-            border-bottom: 1px solid #e0e0e0;
-        }
+	#mobile-menu ul li {
+		padding: 10px 20px;
+		border-bottom: 1px solid #e0e0e0;
+	}
 
-        #mobile-menu ul li a {
-            text-decoration: none;
-            color: #333;
-        }
+	#mobile-menu ul li a {
+		text-decoration: none;
+		color: #333;
+	}
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .desktop-nav {
-                display: none;
-            }
+	/* Responsive Design */
+	@media (max-width: 768px) {
+		.desktop-nav {
+			display: none;
+		}
 
-            .mobile-nav {
-                display: block;
-            }
+		.mobile-nav {
+			display: block;
+		}
 
-            .mobile-nav img {
-                width: 30px;
-                cursor: pointer;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <link rel="shortcut icon" type="image/ico" href="favicon.ico">
-        <div class="container">
-            <div class="logo">
-                <img src="logo.png" alt="Lab Logo" id="lab-logo">
-                Neural Patterns of Cognition Lab
-            </div>
-            <nav>
-                <ul class="desktop-nav">
-                    <li><a href="main.html">Home</a></li>
-                    <li><a href="members.html">Members</a></li>
-                    <li><a href="announcements.html">Announcements</a></li>
-                    <li><a href="publications.html">Publications</a></li>
-                    <li><a href="news.html">News</a></li>
-                </ul>
-                <div class="mobile-nav">
-                    <img src="hamburger-icon.png" alt="Menu" id="hamburger-icon">
-                </div>
-            </nav>
-        </div>
-        <div class="mobile-menu" id="mobile-menu">
-            <ul>
-                <li><a href="main.html">Home</a></li>
-                <li><a href="members.html">Members</a></li>
-                <li><a href="announcements.html">Announcements</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="news.html">News</a></li>
-            </ul>
-        </div>
-    </header>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const hamburgerIcon = document.getElementById('hamburger-icon');
-            const mobileMenu = document.getElementById('mobile-menu');
+		.mobile-nav img {
+			width: 30px;
+			cursor: pointer;
+		}
+	}
+</style>
 
-            hamburgerIcon.addEventListener('click', function(event) {
-                event.stopPropagation();
-                console.log("Hamburger icon clicked");  // Log for debugging
-                if (mobileMenu.style.display === 'block') {
-                    mobileMenu.style.display = 'none';
-                    console.log("Hiding mobile menu");  // Log for debugging
-                } else {
-                    mobileMenu.style.display = 'block';
-                    console.log("Showing mobile menu");  // Log for debugging
-                }
-            });
 
-            window.addEventListener('click', function(event) {
-                if (!event.target.closest('.mobile-nav') && !event.target.closest('#mobile-menu')) {
-                    mobileMenu.style.display = 'none';
-                    console.log("Click outside, hiding mobile menu");  // Log for debugging
-                }
-            });
-        });
-    </script>
-</body>
-</html>
+<link rel="shortcut icon" type="image/ico" href="favicon.ico">
+<div class="container">
+	<div class="logo">
+		<img src="logo.png" alt="Lab Logo" id="lab-logo">
+		Neural Patterns of Cognition Lab
+	</div>
+	<nav>
+		<ul class="desktop-nav">
+			<li><a href="main.html">Home</a></li>
+			<li><a href="members.html">Members</a></li>
+			<li><a href="announcements.html">Announcements</a></li>
+			<li><a href="publications.html">Publications</a></li>
+			<li><a href="news.html">News</a></li>
+		</ul>
+		<div class="mobile-nav">
+			<img src="hamburger-icon.png" alt="Menu" id="hamburger-icon">
+		</div>
+	</nav>
+</div>
+<div class="mobile-menu" id="mobile-menu">
+	<ul>
+		<li><a href="main.html">Home</a></li>
+		<li><a href="members.html">Members</a></li>
+		<li><a href="announcements.html">Announcements</a></li>
+		<li><a href="publications.html">Publications</a></li>
+		<li><a href="news.html">News</a></li>
+	</ul>
+</div>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		const hamburgerIcon = document.getElementById('hamburger-icon');
+		const mobileMenu = document.getElementById('mobile-menu');
+
+		hamburgerIcon.addEventListener('click', function(event) {
+			event.stopPropagation();
+			console.log("Hamburger icon clicked");  // Log for debugging
+			if (mobileMenu.style.display === 'block') {
+				mobileMenu.style.display = 'none';
+				console.log("Hiding mobile menu");  // Log for debugging
+			} else {
+				mobileMenu.style.display = 'block';
+				console.log("Showing mobile menu");  // Log for debugging
+			}
+		});
+
+		window.addEventListener('click', function(event) {
+			if (!event.target.closest('.mobile-nav') && !event.target.closest('#mobile-menu')) {
+				mobileMenu.style.display = 'none';
+				console.log("Click outside, hiding mobile menu");  // Log for debugging
+			}
+		});
+	});
+</script>
