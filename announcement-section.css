@@ -1,0 +1,63 @@
+/* General styling for announcements section */
+#announcements-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.announcement-item {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.announcement-item:last-child {
+    border-bottom: none;
+}
+
+.announcement-item img {
+    max-width: 100px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.announcement-item h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.announcement-item p {
+    margin: 0 0 5px 0;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.announcement-item a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.announcement-item a:hover {
+    text-decoration: underline;
+}
+
+/* Inactive announcements styling */
+.inactive {
+    background-color: #f0f0f0;
+}
+
+/* Additional style for better layout */
+#announcements-section .announcement-item .announcement-content {
+    flex: 1;
+}
+
+#announcements-section .announcement-item .announcement-date {
+    font-size: 0.8em;
+    color: #999;
+}
