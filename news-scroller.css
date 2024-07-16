@@ -15,9 +15,9 @@
     width: 250px; /* Ensure all items have the same width */
     box-sizing: border-box;
     position: relative;
-    display: flex;
+    display: grid;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .news-item img {
@@ -46,7 +46,7 @@
     background: #ddd;
     padding: 5px 10px;
     border-radius: 3px;
-    align-self: flex-end; /* Ensure the link is aligned to the bottom right */
+    align-self: normal; /* Ensure the link is aligned to the bottom right */
     margin-top: 10px;
 }
 
