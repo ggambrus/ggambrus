@@ -13,7 +13,6 @@ function loadHTML(file, elementId) {
 }
 
 function handleMenu() {
-			
 			const hamburgerIcon = document.getElementById('hamburger-icon');
 			const mobileMenu    = document.getElementById('mobile-menu');
 
@@ -47,6 +46,5 @@ function handleMenu() {
 document.addEventListener("DOMContentLoaded", function() {
     loadHTML('header.html', 'header-placeholder');
     loadHTML('footer.html', 'footer-placeholder');
-	handleMenu();
 });
 
