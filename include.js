@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function handleMenu() {
-			document.addEventListener("DOMContentLoaded", function() {
+			
 			const hamburgerIcon = document.getElementById('hamburger-icon');
 			const mobileMenu    = document.getElementById('mobile-menu');
 
@@ -46,5 +46,5 @@ function handleMenu() {
 					console.log("Click outside, hiding mobile menu");
 				}
 			});
-		});
+		
 	};
