@@ -1,7 +1,7 @@
 [
     {
         "title": "Call for Participants in AI Study",
-        "image": "images/ai-study.jpg",
+        "image": "news_images\/award.jpg",
         "date": "2024-07-20",
         "text": "We are looking for participants to take part in a new study on artificial intelligence. This study will explore the impact of AI on everyday life and work. Participants will be compensated for their time.",
         "active": true,
@@ -9,7 +9,7 @@
     },
     {
         "title": "Upcoming Event: AI Conference 2024",
-        "image": "images/ai-conference.jpg",
+        "image": "news_images\/conference.jpg",
         "date": "2024-08-15",
         "text": "Join us for the annual AI Conference 2024, where industry leaders and researchers will discuss the latest advancements in artificial intelligence. The conference will feature keynote speeches, workshops, and networking opportunities.",
         "active": true,
@@ -17,7 +17,7 @@
     },
     {
         "title": "Workshop on Machine Learning",
-        "image": "images/ml-workshop.jpg",
+        "image": "news_images\/research.jpg",
         "date": "2024-09-10",
         "text": "We are excited to announce a workshop on machine learning for beginners. This workshop will cover the basics of machine learning, including supervised and unsupervised learning techniques. No prior experience is required.",
         "active": false,
