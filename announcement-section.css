@@ -1,3 +1,16 @@
+/* General styling for announcements section */
+.highlights {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+.highlights h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 .announcements-section {
     display: flex;
     flex-direction: column;
@@ -9,17 +22,30 @@
     flex-wrap: wrap;
     border-bottom: 1px solid #e0e0e0;
     padding: 20px 0;
+    position: relative;
 }
 
 .announcement-item:last-child {
     border-bottom: none;
 }
 
-.announcement-item h3 {
+.announcement-title-container {
     width: 100%;
-    margin: 0 0 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.announcement-title-container h3 {
+    margin: 0;
     font-size: 1.5em;
     color: #333;
+    flex-grow: 1;
+}
+
+.pin-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
 }
 
 .announcement-item img {
