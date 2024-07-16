@@ -14,9 +14,9 @@
 				<li><a href="publications.html">Publications</a></li>
 				<li><a href="news.html">News</a></li>
 			</ul>
-			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-				<img src="hamburger-icon.png" alt="Menu" id="hamburger-icon" height="32px">
-			</a>
+			<div class="mobile-nav">
+				<img src="hamburger-icon.png" alt="Menu" id="hamburger-icon">
+			</div>
 		</nav>
 	</div>
 	<div class="mobile-menu" id="mobile-menu">
@@ -28,14 +28,41 @@
 			<li><a href="news.html">News</a></li>
 		</ul>
 	</div>
-	<script>
-		function myFunction() {
-		  var x = document.getElementById("mobile-menu");
-		  if (x.style.display === "block") {
-			x.style.display = "none";
-		  } else {
-			x.style.display = "block";
-		  }
-		}
-	</script>
 </header>
+
+<script>
+	function init() {
+            const hamburgerIcon = document.getElementById('hamburger-icon');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (hamburgerIcon) {
+                console.log("Hamburger icon exists");
+            } else {
+                console.error("Hamburger icon not found");
+                return;
+            }
+
+            hamburgerIcon.addEventListener('click', function(event) {
+                event.stopPropagation();
+                console.log("Hamburger icon clicked");
+                if (mobileMenu.style.display === 'block') {
+                    mobileMenu.style.display = 'none';
+                    console.log("Hiding mobile menu");
+                } else {
+                    mobileMenu.style.display = 'block';
+                    console.log("Showing mobile menu");
+                }
+            });
+
+            window.addEventListener('click', function(event) {
+                if (!event.target.closest('.mobile-nav') && !event.target.closest('#mobile-menu')) {
+                    mobileMenu.style.display = 'none';
+                    console.log("Click outside, hiding mobile menu");
+                }
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", init);
+        // Fallback for cases where DOMContentLoaded might not trigger
+        window.onload = init;
+</script>
