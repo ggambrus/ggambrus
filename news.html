@@ -60,7 +60,7 @@
 
 						if (news.text) {
 							const text = document.createElement('p');
-							text.textContent = news.text;
+							text.innerHTML = news.text;
 							content.appendChild(text);
 						}
 
