@@ -170,28 +170,5 @@
 			}
 	</script>
 
-
-	<script>
-		document.addEventListener("DOMContentLoaded", function() {
-			const hamburgerIcon = document.getElementById('hamburger-icon');
-			const mobileMenu = document.getElementById('mobile-menu');
-
-			hamburgerIcon.addEventListener('click', function(event) {
-				event.stopPropagation();  // Prevent the click event from bubbling up
-				mobileMenu.style.display = (mobileMenu.style.display === 'block') ? 'none' : 'block';
-				console.log("Click1");
-			});
-
-			// Close mobile menu when clicking outside
-			window.addEventListener('click', function(event) {
-				if (!event.target.closest('.mobile-nav') && !event.target.closest('#mobile-menu')) {
-					mobileMenu.style.display = 'none';
-				}
-				console.log("Click2");
-			});
-		});
-	</script>
-
-
 </body>
 </html>
