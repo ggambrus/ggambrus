@@ -7,46 +7,27 @@ function loadHTML(file, elementId) {
             return response.text();
         })
         .then(data => {
-            document.getElementById(elementId).innerHTML = data;
+            //document.getElementById(elementId).innerHTML = data;
+			document.getElementById(elementId).innerHTML = data;
+			  Array.from(document.getElementById(elementId).querySelectorAll("script")).forEach(oldScript => {
+				const newScript = document.createElement("script");
+				Array.from(oldScript.attributes)
+				  .forEach(attr => newScript.setAttribute(attr.name, attr.value));
+				newScript.appendChild(document.createTextNode(oldScript.innerHTML));
+				oldScript.parentNode.replaceChild(newScript, oldScript);
+			  });
+			
+			
         })
         .catch(error => console.error(error));
 }
 
-//function handleMenu() {
-//			const hamburgerIcon = document.getElementById('hamburger-icon');
-//			const mobileMenu    = document.getElementById('mobile-menu');
-//
-//			if (hamburgerIcon) {
-//				console.log("Hamburger icon exists");
-//			} else {
-//				console.error("Hamburger icon not found");
-//			}
-//
-//			hamburgerIcon.addEventListener('click', function(event) {
-//				event.stopPropagation();
-//				console.log("Hamburger icon clicked");
-//				if (mobileMenu.style.display === 'block') {
-//					mobileMenu.style.display = 'none';
-//					console.log("Hiding mobile menu");
-//				} else {
-//					mobileMenu.style.display = 'block';
-//					console.log("Showing mobile menu");
-//				}
-//			});
-//
-//			window.addEventListener('click', function(event) {
-//				if (!event.target.closest('.mobile-nav') && !event.target.closest('#mobile-menu')) {
-//					mobileMenu.style.display = 'none';
-//					console.log("Click outside, hiding mobile menu");
-//				}
-//			});
-//		
-//	};
 
 document.addEventListener("DOMContentLoaded", function() {
     loadHTML('header.html', 'header-placeholder');
     loadHTML('footer.html', 'footer-placeholder');
 });
+
 
 //window.onload = function () {
 //	handleMenu();
