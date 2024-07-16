@@ -1,20 +1,142 @@
 <header>
-	<link rel="shortcut icon" type="image/ico" href="favicon.ico">
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
     <div class="container">
         <div class="logo">
             <img src="logo.png" alt="Lab Logo" id="lab-logo">
             Neural Patterns of Cognition Lab
         </div>
         <nav>
-            <ul>
+            <ul class="desktop-nav">
                 <li><a href="main.html">Home</a></li>
-                <!--<li><a href="about.html">About Us</a></li>-->
                 <li><a href="members.html">Members</a></li>
-				<li><a href="announcements.html">Announcements</a></li>
+                <li><a href="announcements.html">Announcements</a></li>
                 <li><a href="publications.html">Publications</a></li>
                 <li><a href="news.html">News</a></li>
-                <!--<li><a href="contact.html">Contact</a></li>-->
             </ul>
+            <div class="mobile-nav">
+                <img src="hamburger-icon.png" alt="Menu" id="hamburger-icon">
+            </div>
         </nav>
     </div>
+    <div class="mobile-menu" id="mobile-menu">
+        <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="members.html">Members</a></li>
+            <li><a href="announcements.html">Announcements</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="news.html">News</a></li>
+        </ul>
+    </div>
 </header>
+
+<style>
+	/* General Styles */
+	header {
+		background-color: #fff;
+		padding: 20px 0;
+		border-bottom: 1px solid #e0e0e0;
+	}
+
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.logo {
+		display: flex;
+		align-items: center;
+	}
+
+	.logo img {
+		margin-right: 10px;
+	}
+
+	nav ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+	}
+
+	nav ul li {
+		margin-left: 20px;
+	}
+
+	nav ul li a {
+		text-decoration: none;
+		color: #333;
+	}
+
+	.desktop-nav {
+		display: flex;
+	}
+
+	.mobile-nav {
+		display: none;
+	}
+
+	#mobile-menu {
+		display: none;
+		position: absolute;
+		top: 70px;
+		left: 0;
+		width: 100%;
+		background-color: #fff;
+		border-top: 1px solid #e0e0e0;
+	}
+
+	#mobile-menu ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	#mobile-menu ul li {
+		padding: 10px 20px;
+		border-bottom: 1px solid #e0e0e0;
+	}
+
+	#mobile-menu ul li a {
+		text-decoration: none;
+		color: #333;
+	}
+
+	/* Responsive Design */
+	@media (max-width: 768px) {
+		.desktop-nav {
+			display: none;
+		}
+
+		.mobile-nav {
+			display: block;
+		}
+
+		.mobile-nav img {
+			width: 30px;
+			cursor: pointer;
+		}
+	}
+</style>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		const hamburgerIcon = document.getElementById('hamburger-icon');
+		const mobileMenu = document.getElementById('mobile-menu');
+
+		hamburgerIcon.addEventListener('click', function() {
+			if (mobileMenu.style.display === 'block') {
+				mobileMenu.style.display = 'none';
+			} else {
+				mobileMenu.style.display = 'block';
+			}
+		});
+
+		// Close mobile menu when clicking outside
+		window.addEventListener('click', function(event) {
+			if (!event.target.closest('nav') && !event.target.closest('#mobile-menu')) {
+				mobileMenu.style.display = 'none';
+			}
+		});
+	});
+</script>
