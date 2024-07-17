@@ -26,9 +26,9 @@ nav ul li a {
 #mobile-menu {
 	display: none;
 	position: absolute;
-	top: 110;
+	top: 110px;
 	left: 15%;
-	width: 100%;
+	width: 85%;
 	background-color: #333;
 	border-top: 1px solid #e0e0e0;
 	z-index: 1000;
@@ -48,6 +48,8 @@ nav ul li a {
 #mobile-menu ul li a {
 	text-decoration: none;
 	color: #fff;
+	display: inline-block;
+	width: 100%;
 }
 
 /* Responsive Design */
