@@ -117,6 +117,13 @@ var foo = function (bar) {
 console.log(foo(5));
 ```
 
+## Figure caption test
+
+[figure-1]: https://octodex.github.com/images/minion.png "An image of a minion. Lorem Ipsum was originally taken from a Latin text by the Roman philosopher Cicero, a connection that Latin scholar Richard McClintock made in the 1980s. It has gone through significant changes over the centuries, with words being taken out, shortened, and added in." 
+![Alt text][Figure 1] 
+A reference to the [figure-1](#figure-1).
+
+
 ## Tables
 
 | Option | Description |
