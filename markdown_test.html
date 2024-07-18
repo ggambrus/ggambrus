@@ -19,9 +19,18 @@
     
     <script src="include.js"></script>
 		
-	<script>
-		// js script to insert test.md markdown as html to markdown-placeholder
-	</script>
+	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('test.md')
+                .then(response => response.text())
+                .then(markdown => {
+                    const markdownPlaceholder = document.getElementById('markdown-placeholder');
+                    markdownPlaceholder.innerHTML = marked(markdown);
+                })
+                .catch(error => console.error('Error fetching markdown file:', error));
+        });
+    </script>
 
 </body>
 </html>
