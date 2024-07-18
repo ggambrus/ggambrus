@@ -10,8 +10,10 @@
     <div id="header-placeholder"></div>
     
     <main>
-        <section>
-			<div id="markdown-placeholder"></div>
+        <section class="highlights">
+			<div class="container">
+				<div id="markdown-placeholder"></div>
+			</div>
         </section>
     </main>
     
@@ -26,7 +28,7 @@
                 .then(response => response.text())
                 .then(markdown => {
                     const markdownPlaceholder = document.getElementById('markdown-placeholder');
-                    markdownPlaceholder.innerHTML = marked(markdown);
+                    markdownPlaceholder.innerHTML = marked.parse(markdown);
                 })
                 .catch(error => console.error('Error fetching markdown file:', error));
         });
